@@ -273,4 +273,4 @@ dist
 .pnp.*
 
 # PowerShell Run Script
-.ps1
+*.ps1
