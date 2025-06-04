@@ -1,3 +1,14 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@layer components {
+	.section {
+		@apply bg-sky-950 text-white m-auto justify-center w-100 h-9/10 rounded-xl;
+	}
+
+	.section p {
+		@apply text-center text-4xl;
+	}
+
+	.link {
+	}
+}
