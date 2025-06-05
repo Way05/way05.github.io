@@ -193,8 +193,8 @@
 @layer components {
   .section {
     margin: auto;
-    height: calc(9/10 * 100%);
-    width: calc(var(--spacing) * 100);
+    height: fit-content;
+    width: calc(10/12 * 100%);
     justify-content: center;
     border-radius: var(--radius-xl);
     background-color: var(--color-slate-900);
@@ -206,9 +206,11 @@
     @supports (color: color-mix(in lab, red, red)) {
       --tw-shadow-color: color-mix(in oklab, var(--color-teal-600) var(--tw-shadow-alpha), transparent);
     }
+    -webkit-user-select: none;
+    user-select: none;
   }
   .section p {
-    margin-top: calc(var(--spacing) * 5);
+    margin: calc(var(--spacing) * 5);
     text-align: center;
     font-size: var(--text-4xl);
     line-height: var(--tw-leading, var(--text-4xl--line-height));
@@ -221,13 +223,9 @@
     font-size: var(--text-base);
     line-height: var(--tw-leading, var(--text-base--line-height));
   }
-  .aboutMe {
-    height: fit-content;
-  }
   .link {
-    margin: auto;
-    margin-top: calc(var(--spacing) * 5);
-    height: calc(1/10 * 100%);
+    margin: calc(var(--spacing) * 5);
+    height: fit-content;
     width: calc(9/10 * 100%);
     align-content: center;
     border-radius: var(--radius-xl);
@@ -240,7 +238,7 @@
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
   .link p {
-    margin: auto;
+    margin: calc(var(--spacing) * 1);
     margin-left: calc(var(--spacing) * 5);
     text-align: left;
     font-size: var(--text-base);
@@ -249,10 +247,13 @@
     font-weight: var(--font-weight-bold);
   }
   .link a {
-    margin: auto;
+    margin: calc(var(--spacing) * 1);
     margin-left: calc(var(--spacing) * 5);
+    display: inline-block;
     font-style: italic;
     text-decoration-line: underline;
+    -webkit-user-select: none;
+    user-select: none;
   }
   .link a:hover {
     color: var(--color-amber-300);

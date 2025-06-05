@@ -1,41 +1,41 @@
 @import "tailwindcss";
 
 @theme {
-	--shadow1: 0 0 30px -5px oklch(60% 0.118 184.704);
+  --shadow1: 0 0 30px -5px oklch(60% 0.118 184.704);
 }
 
 @layer components {
-	.section {
-		@apply bg-slate-900 text-white m-auto justify-center w-100 h-9/10 rounded-xl shadow-xl/30 shadow-teal-600;
-	}
+  .section {
+    @apply bg-slate-900 text-white select-none m-auto justify-center w-10/12 h-fit rounded-xl shadow-xl/30 shadow-teal-600;
+  }
 
-	.section p {
-		@apply text-center text-4xl mt-5;
-	}
+  .section p {
+    @apply text-center text-4xl m-5;
+  }
 
-	.section .me {
-		@apply text-base w-90 m-auto mt-5 mb-5;
-	}
+  .section .me {
+    @apply text-base w-90 m-auto mt-5 mb-5;
+  }
 
-	.aboutMe {
+  /* .aboutMe {
 		@apply h-fit;
-	}
+	} */
 
-	.link {
-		@apply bg-sky-950 m-auto mt-5 content-center w-9/10 h-1/10 rounded-xl duration-100;
-	}
-	.link:hover {
-		@apply shadow-(--shadow1);
-	}
+  .link {
+    @apply bg-sky-950 m-5 content-center w-9/10 h-fit rounded-xl duration-100;
+  }
+  .link:hover {
+    @apply shadow-(--shadow1);
+  }
 
-	.link p {
-		@apply text-base font-bold m-auto text-left ml-5;
-	}
+  .link p {
+    @apply text-base font-bold m-1 ml-5 text-left;
+  }
 
-	.link a {
-		@apply m-auto ml-5 underline italic;
-	}
-	.link a:hover {
-		@apply text-amber-300;
-	}
+  .link a {
+    @apply select-none inline-block m-1 ml-5 underline italic;
+  }
+  .link a:hover {
+    @apply text-amber-300;
+  }
 }
