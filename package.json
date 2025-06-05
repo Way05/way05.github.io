@@ -20,6 +20,7 @@
 	},
 	"dependencies": {
 		"@tailwindcss/cli": "^4.1.8",
+		"lit": "^3.3.0",
 		"tailwindcss": "^4.1.8"
 	}
 }
