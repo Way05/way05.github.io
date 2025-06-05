@@ -16,11 +16,10 @@
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"compile": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
+		"build": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
 	},
 	"dependencies": {
 		"@tailwindcss/cli": "^4.1.8",
-		"lit": "^3.3.0",
 		"tailwindcss": "^4.1.8"
 	}
 }
