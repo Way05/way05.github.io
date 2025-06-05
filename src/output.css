@@ -171,6 +171,12 @@
   }
 }
 @layer utilities {
+  .mr-20 {
+    margin-right: calc(var(--spacing) * 20);
+  }
+  .ml-20 {
+    margin-left: calc(var(--spacing) * 20);
+  }
   .grid {
     display: grid;
   }
@@ -183,8 +189,8 @@
   .grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
-  .gap-3 {
-    gap: calc(var(--spacing) * 3);
+  .gap-20 {
+    gap: calc(var(--spacing) * 20);
   }
   .bg-slate-950 {
     background-color: var(--color-slate-950);
@@ -192,12 +198,13 @@
 }
 @layer components {
   .section {
-    margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
     height: fit-content;
-    width: calc(10/12 * 100%);
-    justify-content: center;
     border-radius: var(--radius-xl);
     background-color: var(--color-slate-900);
+    padding: calc(var(--spacing) * 3);
+    padding-bottom: calc(var(--spacing) * 5);
     color: var(--color-white);
     --tw-shadow-alpha: 30%;
     --tw-shadow: 0 20px 25px -5px var(--tw-shadow-color, oklab(from rgb(0 0 0 / 0.1) l a b / 30%)), 0 8px 10px -6px var(--tw-shadow-color, oklab(from rgb(0 0 0 / 0.1) l a b / 30%));
@@ -224,12 +231,13 @@
     line-height: var(--tw-leading, var(--text-base--line-height));
   }
   .link {
-    margin: calc(var(--spacing) * 5);
+    margin: auto;
+    margin-bottom: calc(var(--spacing) * 5);
     height: fit-content;
     width: calc(9/10 * 100%);
-    align-content: center;
     border-radius: var(--radius-xl);
     background-color: var(--color-sky-950);
+    padding: calc(var(--spacing) * 1);
     --tw-duration: 100ms;
     transition-duration: 100ms;
   }

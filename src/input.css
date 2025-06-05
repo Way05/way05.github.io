@@ -6,7 +6,7 @@
 
 @layer components {
   .section {
-    @apply bg-slate-900 text-white select-none m-auto justify-center w-10/12 h-fit rounded-xl shadow-xl/30 shadow-teal-600;
+    @apply bg-slate-900 text-white select-none mt-auto mb-auto h-fit p-3 pb-5 rounded-xl shadow-xl/30 shadow-teal-600;
   }
 
   .section p {
@@ -22,7 +22,7 @@
 	} */
 
   .link {
-    @apply bg-sky-950 m-5 content-center w-9/10 h-fit rounded-xl duration-100;
+    @apply bg-sky-950 m-auto mb-5 p-1 w-9/10 h-fit rounded-xl duration-100;
   }
   .link:hover {
     @apply shadow-(--shadow1);
