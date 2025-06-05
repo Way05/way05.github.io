@@ -14,7 +14,7 @@
   }
 
   .section .me {
-    @apply text-base text-wrap m-auto mt-5 mb-5 p-1;
+    @apply text-base m-auto mt-5 mb-5 p-1;
   }
 
   /* .aboutMe {
