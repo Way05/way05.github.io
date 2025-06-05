@@ -226,9 +226,10 @@
     margin: auto;
     margin-top: calc(var(--spacing) * 5);
     margin-bottom: calc(var(--spacing) * 5);
-    width: calc(var(--spacing) * 90);
+    padding: calc(var(--spacing) * 1);
     font-size: var(--text-base);
     line-height: var(--tw-leading, var(--text-base--line-height));
+    text-wrap: wrap;
   }
   .link {
     margin: auto;
