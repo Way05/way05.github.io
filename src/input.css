@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  --shadow1: 0 0 30px -5px oklch(60% 0.118 184.704);
+}
+
+@layer components {
+  .section {
+    @apply mt-auto mb-auto h-fit rounded-xl bg-slate-900 p-3 pb-5 text-white shadow-xl/30 shadow-teal-600 select-none;
+  }
+
+  .section p {
+    @apply m-5 text-center text-4xl;
+  }
+
+  .section .me {
+    @apply m-auto mt-5 mb-5 p-1 text-base;
+  }
+
+  /* .aboutMe {
+		@apply h-fit;
+	} */
+
+  .link {
+    @apply m-auto mb-5 h-fit w-9/10 rounded-xl bg-sky-950 p-1 pl-5 duration-100;
+  }
+  .link:hover {
+    @apply shadow-(--shadow1);
+  }
+
+  .link p {
+    @apply m-1 text-left text-base font-bold;
+  }
+
+  .link a {
+    @apply m-1 inline-block italic underline select-none;
+  }
+  .link a:hover {
+    @apply text-amber-300;
+  }
+}
