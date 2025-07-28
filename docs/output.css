@@ -203,8 +203,7 @@
     height: fit-content;
     border-radius: var(--radius-xl);
     background-color: var(--color-slate-900);
-    padding: calc(var(--spacing) * 3);
-    padding-bottom: calc(var(--spacing) * 5);
+    padding-bottom: calc(var(--spacing) * 3);
     color: var(--color-white);
     --tw-shadow-alpha: 30%;
     --tw-shadow: 0 20px 25px -5px var(--tw-shadow-color, oklab(from rgb(0 0 0 / 0.1) l a b / 30%)), 0 8px 10px -6px var(--tw-shadow-color, oklab(from rgb(0 0 0 / 0.1) l a b / 30%));
@@ -226,28 +225,29 @@
     margin: auto;
     margin-top: calc(var(--spacing) * 5);
     margin-bottom: calc(var(--spacing) * 5);
-    padding: calc(var(--spacing) * 1);
+    padding-inline: calc(var(--spacing) * 4);
     font-size: var(--text-base);
     line-height: var(--tw-leading, var(--text-base--line-height));
   }
   .link {
     margin: auto;
-    margin-bottom: calc(var(--spacing) * 5);
+    margin-bottom: calc(var(--spacing) * 3);
     height: fit-content;
     width: calc(9/10 * 100%);
     border-radius: var(--radius-xl);
-    background-color: var(--color-sky-950);
     padding: calc(var(--spacing) * 1);
-    padding-left: calc(var(--spacing) * 5);
+    padding-left: calc(var(--spacing) * 2);
+    text-align: left;
     --tw-duration: 100ms;
     transition-duration: 100ms;
   }
   .link:hover {
+    background-color: var(--color-sky-950);
     --tw-shadow: var(--shadow1);
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
   .link p {
-    margin: calc(var(--spacing) * 1);
+    margin: calc(var(--spacing) * 0);
     text-align: left;
     font-size: var(--text-base);
     line-height: var(--tw-leading, var(--text-base--line-height));
@@ -255,8 +255,12 @@
     font-weight: var(--font-weight-bold);
   }
   .link a {
-    margin: calc(var(--spacing) * 1);
+    margin: calc(var(--spacing) * 0);
     display: inline-block;
+    color: color-mix(in srgb, #fff 80%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      color: color-mix(in oklab, var(--color-white) 80%, transparent);
+    }
     font-style: italic;
     text-decoration-line: underline;
     -webkit-user-select: none;

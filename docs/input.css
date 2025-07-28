@@ -6,7 +6,7 @@
 
 @layer components {
   .section {
-    @apply mt-auto mb-auto h-fit rounded-xl bg-slate-900 p-3 pb-5 text-white shadow-xl/30 shadow-teal-600 select-none;
+    @apply mt-auto mb-auto h-fit rounded-xl bg-slate-900 pb-3 text-white shadow-xl/30 shadow-teal-600 select-none;
   }
 
   .section p {
@@ -14,7 +14,7 @@
   }
 
   .section .me {
-    @apply m-auto mt-5 mb-5 p-1 text-base;
+    @apply m-auto mt-5 mb-5 px-4 text-base;
   }
 
   /* .aboutMe {
@@ -22,18 +22,18 @@
 	} */
 
   .link {
-    @apply m-auto mb-5 h-fit w-9/10 rounded-xl bg-sky-950 p-1 pl-5 duration-100;
+    @apply m-auto mb-3 h-fit w-9/10 rounded-xl p-1 pl-2 text-left duration-100;
   }
   .link:hover {
-    @apply shadow-(--shadow1);
+    @apply bg-sky-950 shadow-(--shadow1);
   }
 
   .link p {
-    @apply m-1 text-left text-base font-bold;
+    @apply m-0 text-left text-base font-bold;
   }
 
   .link a {
-    @apply m-1 inline-block italic underline select-none;
+    @apply m-0 inline-block text-white/80 italic underline select-none;
   }
   .link a:hover {
     @apply text-amber-300;
