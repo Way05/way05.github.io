@@ -17,6 +17,10 @@
     @apply m-auto mt-5 mb-5 px-4 text-left text-base;
   }
 
+  span {
+    @apply block text-justify;
+  }
+
   /* .aboutMe {
 		@apply h-fit;
 	} */
@@ -37,5 +41,13 @@
   }
   .link a:hover {
     @apply text-amber-300;
+  }
+
+  a {
+    @apply text-teal-600 underline;
+  }
+
+  a:hover {
+    @apply text-teal-500;
   }
 }

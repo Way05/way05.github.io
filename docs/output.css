@@ -8,6 +8,7 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-amber-300: oklch(87.9% 0.169 91.605);
+    --color-teal-500: oklch(70.4% 0.14 182.503);
     --color-teal-600: oklch(60% 0.118 184.704);
     --color-sky-950: oklch(29.3% 0.066 243.157);
     --color-slate-900: oklch(20.8% 0.042 265.755);
@@ -230,6 +231,10 @@
     font-size: var(--text-base);
     line-height: var(--tw-leading, var(--text-base--line-height));
   }
+  span {
+    display: block;
+    text-align: justify;
+  }
   .link {
     margin: auto;
     margin-bottom: calc(var(--spacing) * 3);
@@ -269,6 +274,13 @@
   }
   .link a:hover {
     color: var(--color-amber-300);
+  }
+  a {
+    color: var(--color-teal-600);
+    text-decoration-line: underline;
+  }
+  a:hover {
+    color: var(--color-teal-500);
   }
 }
 @property --tw-shadow {
